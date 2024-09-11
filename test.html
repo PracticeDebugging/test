@@ -642,7 +642,7 @@
       background-color: transparent;
       font-family: sans-serif;
       font-weight: 600;
-	  font-size: 15px;
+      font-size: 15px;
       color: #FF6700;
       border: none;
       padding: 0px 15px;
@@ -750,58 +750,60 @@
        background-repeat: no-repeat;"
      }
     
-	 .carouselnum3-container {
-            position: relative;
-            width: 80%;
-			height: 230px;
-            margin: auto;
-            overflow: hidden;
-            background-color: transparent; 
-        }
+     .carouselnum3-container {
+       position: relative;
+       width: 80%;
+       height: 230px;
+       margin: auto;
+       overflow: hidden;
+       background-color: transparent; 
+     }
 
-        .carouselnum3 {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+    .carouselnum3 {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
 
-        .carouselnum3-item {
-			 min-width: 47%; 
-			 height: auto;
-			  margin: 0 11px; 
-			 box-sizing: border-box;
-        }
-        .carouselnum3-item img {
-            width: 100%;
-            height: auto;
-			display: block;
-			border-radius: 4px;
-        }
-        .carouselnum3-buttons {
-            text-align: center;
-            position: absolute;
-            bottom: 15px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-        }
+    .carouselnum3-item {
+      min-width: 47%; 
+      height: auto;
+      margin: 0 11px; 
+      box-sizing: border-box;
+    }
+	  
+    .carouselnum3-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+     }
 
-        .carouselnum3-dot {
-            height: 5px;
-            width: 15px;
-			border-radius: 4px;
-            background-color: #5D5D5D;
-            display: inline-block;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+     .carouselnum3-buttons {
+       text-align: center;
+       position: absolute;
+       bottom: 15px;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       gap: 5px;
+      }
+
+   .carouselnum3-dot {
+      height: 5px;
+      width: 15px;
+      border-radius: 4px;
+      background-color: #5D5D5D;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 		
-		 .carouselnum3-dot.active,
-        .carouselnum3-dot:hover {
-            background-color: #FF6700;
-        }
+    .carouselnum3-dot.active,
+    .carouselnum3-dot:hover {
+       background-color: #FF6700;
+     }
 		
-	.ninthpage-section {
+    .ninthpage-section {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -875,154 +877,162 @@
       text-decoration: underline;
     }
 	
-	.subscribe-section {
-            position: relative;
-			margin-top: 50px;
-            width: 100%;
-            height: 250px; 
-            background: url('pexels-vlad.jpg') no-repeat center center/cover; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 10px;
-        }
+    .subscribe-section {
+      position: relative;
+      margin-top: 50px;
+      width: 100%;
+      height: 250px; 
+      background: url('pexels-vlad.jpg') no-repeat center center/cover; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 10px;
+    }
 
-        .subscribe-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85); 
+    .subscribe-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85); 
+    }
+    
+    .subscribe-content {
+      margin-top: 50px;
+      z-index: 1; 
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+	  
+     .subscribe-form {
+       display: flex;
+       border: 1px solid #FFFFFF;
+       outline:  2px solid #FFFFFF;
+       background-color: #FFFFFF;
+       color: #FFFFFF;
+       border-radius: 4px;
+       overflow: hidden;
+       align-items: center;
+       width: 100%;
+       max-width: 400px;
+       margin: 0 auto;
+      }
+        
+      .subscribe-form input[type="Email"] {
+        flex: 1;
+        padding: 8px;
+        font-size: 0.6rem;
+        border: none;
+        outline: none;
+       }
+	  
+      .subscribe-form button {
+        padding: 10px 15px;
+	color: #FFFFFF;
+	border: none;
+	outline:  none;
+        font-weight: 600px;
+	font-size: 0.6rem;
+        background-color: #FF6700; 
+	border-radius: 4px ;
+	cursor: pointer;		
         }
-
-        .subscribe-content {
-			margin-top: 50px;
-            z-index: 1; 
-			width: 100%;
-            max-width: 1200px;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-        .subscribe-form {
-            display: flex;
-			border: 1px solid #FFFFFF;
-			outline:  2px solid #FFFFFF;
-			background-color: #FFFFFF;
-			color: #FFFFFF;
-			border-radius: 4px;
-			overflow: hidden;
-            align-items: center;
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .subscribe-form input[type="Email"] {
-            flex: 1;
-            padding: 8px;
-            font-size: 0.6rem;
-            border: none;
-            outline: none;
-        }
-       .subscribe-form button {
-            padding: 10px 15px;
-			 color: #FFFFFF;
-			 border: none;
-			 outline:  none;
-            font-weight: 600px;
-			font-size: 0.6rem;
-            background-color: #FF6700; 
-			border-radius: 4px ;
-            cursor: pointer;
-			
-        }
+	  
         .subscribe-form button:hover {
-            text-decoration: underline;
+          text-decoration: underline;
         }
 		
-		.footer {
-            background-color: #FFFFFF;
+	.footer {
+          background-color: #FFFFFF;
         }
 
         .footer-links a {
-            color: #000000;
-			line-height: 2;
-			text-decoration: none;
+          color: #000000;
+	  line-height: 2;
+	  text-decoration: none;
         }
 
         .footer-links a:hover {
-			color: #FF6700;
-			text-decoration: underline;
+	  color: #FF6700;
+	  text-decoration: underline;
         }
-		.imgsocial{
-			transition: color 0.3s ease; 
+	
+	.imgsocial{
+	  transition: color 0.3s ease; 
 		}
-		.imgsocial :hover {
-			transform: scale(1.05); 
-			opacity: 0.8;
-			color: #FF6700;
-			
-		}
+	  
+	.imgsocial :hover {
+	  transform: scale(1.05); 
+	  opacity: 0.8;
+	  color: #FF6700;	
+	}
 		
-	.footerbutton {
-		background-color: #FF6700;
-		color: #FFFFFF; 
-		border: 1px #FF6700;
-		border-radius: 4px;
-		padding: 10px 15px;
-		text-align: center;
-		font-size: 0.6rem;
+      .footerbutton {
+	background-color: #FF6700;
+	color: #FFFFFF; 
+	border: 1px #FF6700;
+	border-radius: 4px;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 0.6rem;
         font-family: sans-serif;
-		font-weight: 600;
-		cursor: pointer;
-	}
-	.footerbutton:hover {
-			text-decoration: underline;
+	font-weight: 600;
+	cursor: pointer;
+       }
+	  
+      .footerbutton:hover {
+	text-decoration: underline;
         }
+	  
 	.footerbutton2 {
-		background-color: #292929; 
-		color: #FFFFFF;
-		border: 1px #292929;
-		border-radius: 4px;
-		padding: 10px 25px;
-		text-align: center;
-		font-size: 0.6rem;
-		font-family: sans-serif;
-		cursor: pointer;
+	  background-color: #292929; 
+	  color: #FFFFFF;
+          border: 1px #292929;
+	  border-radius: 4px;
+	  padding: 10px 25px;
+	  text-align: center;
+	  font-size: 0.6rem;
+	  font-family: sans-serif;
+	  cursor: pointer;
 	}
+	  
 	.footerbutton2:hover {
-			text-decoration: underline;
+	  text-decoration: underline;
         }
+	  
 	.bottomfooter-wrapper {
-		 background-color: #FF6700;
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-			font-family: 'Poppins', sans-serif;
+	  background-color: #FF6700;
+          width: 100vw;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+	  font-family: 'Poppins', sans-serif;
         }
 
         .bottomfooter {
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            box-sizing: border-box;
-			font-size: 0.67rem;
-			
+          color: white;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1200px;
+          margin: 0 auto;
+          box-sizing: border-box;
+	  font-size: 0.67rem;		
         }
+	  
         .bottomfooter a {
-            color: white;
-            text-decoration: none;
+          color: white;
+          text-decoration: none;
         }
 
         .bottomfooter a:hover {
-            text-decoration: underline;
+          text-decoration: underline;
         }
 
         .bottomfooter .right-content a:first-child {
@@ -1036,12 +1046,13 @@
 		
     @media screen and (max-width: 768px) {
     .navbar {
-		flex-direction: row;
-		align-items: center;
+	flex-direction: row;
+	align-items: center;
         justify-content: space-between;
         padding-left: 10px;
         padding-right: 10px;
     }
+	    
     .navbar ul {
         display: none;
         flex-direction: column;
@@ -1052,134 +1063,155 @@
         padding: 10px;
         border-radius: 8px;
     }
+	    
     .navbar ul.show {
         display: block; 
     }
+	    
     .navbar ul li {
-		margin-bottom: 10px;
+	margin-bottom: 10px;
         text-align: left;
     }
+	    
     .menu-icon {
         font-size: 1.5rem;
         color: #FFFFFF;
         cursor: pointer;
         margin-left: auto; 
     }
+	    
     .bg-image {
         height: 60vh;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-	.title {
-		font-size: 2rem;
-		margin-top: 20px;
-		margin-left: 0; 
-	}
-	.subtitle {
-		font-size: 1rem;
-		margin-left: 0; 
-		margin-bottom: 20px;
-	}
-	.search-bar {
-		max-width: 70%;
-		margin-left: 0; 
-		margin-bottom: 10px;
-		padding-left: 0; 
-	}
-	.bottom-section {
-		flex-direction: column;
-		padding: 10px; 
-	}
-	.bottom-center {
-		margin-left: 30px; 
-		margin-right: 25px;
-		text-align: left; 
-	}
-  
-	.bottom-right {
-		margin-right: 265px;
+	    
+    .title {
+	font-size: 2rem;
+	margin-top: 20px;
+	margin-left: 0; 
     }
+    
+    .subtitle {
+	font-size: 1rem;
+	margin-left: 0; 
+	margin-bottom: 20px;
+     }
+     
+     .search-bar {
+	max-width: 70%;
+	margin-left: 0; 
+	margin-bottom: 10px;
+	padding-left: 0; 
 	}
-	 @media screen and (max-width: 576px) {
-		
-	.bottom-right {
-		margin-right: 100px;
+	    
+     .bottom-section {
+	flex-direction: column;
+	padding: 10px; 
+	}
+	    
+      .bottom-center {
+	margin-left: 30px; 
+	margin-right: 25px;
+	text-align: left; 
+      }
+  
+      .bottom-right {
+	margin-right: 265px;
+       }
+      }
+	  
+      @media screen and (max-width: 576px) {	
+       .bottom-right {
+	margin-right: 100px;
       }
     }
+	  
     @media screen and (max-width: 768px) {
       .logo-carousel-section {
         padding: 20px 20px;
       }
+	    
       .owl-carousel .item {
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 0;
       }
+	    
       .owl-carousel .item img {
         width: 50px;
         height: 30px;
       }
+	    
       .feature-section {
         flex-direction: column;
         padding: 20px;
       }
+	    
       .feature-image {
         margin-left: 0;
         margin-bottom: 20px;
         width: 100%;
         height: auto;
       }
+	    
       .feature-content {
         margin-left: 100px;
         margin-right: 100px;
         text-align: left;
       }
+	    
       .feature-title h1 {
         font-size: 2rem;
       }
+	    
       .feature-title h5 {
         font-size: 1rem;
       }
+	    
       .feature-description {
         font-size: 12px;
         line-height: 1.4;
       }
+	    
       .feature-button {
         font-size: 12px;
         padding: 10px 20px;
       }
     }
-	 @media screen and (max-width: 576px) {
-		
-	.owl-carousel .item img {
+	  
+     @media screen and (max-width: 576px) {
+     .owl-carousel .item img {
         width: 30px;
         height: 30px;
       }
-	  .feature-content {
+	     
+      .feature-content {
         margin-left: 55px;
         margin-right: 55px;
         text-align: left;
       }
-      }
-	@media screen and (max-width: 768px) {
+     }
+	
+     @media screen and (max-width: 768px) {
       .feature2 {
-       flex-direction: column;
-       margin-left: 0px
+        flex-direction: column;
+        margin-left: 0px
       }
 	  
-	   .top-left {
-	  margin-left: 25px;
-    }
+     .top-left {
+	margin-left: 25px;
+      }
 
       .feature2-right {
         margin-top: 20px;
-		margin-right: 320px;
+	margin-right: 320px;
       }
 	  
-	  .carousel-container {
+     .carousel-container {
       max-width: 75%;
-	  }
+      }
 	  
       .carousel-slide {
         min-width: calc(50% - 20px);
@@ -1189,7 +1221,7 @@
         top: 45%;
       }
 	  
-	  .prev {
+     .prev {
       left: 55px;
     }
 
@@ -1199,31 +1231,30 @@
     }
 
     @media screen and (max-width: 576px) {
-	  .top-left {
-	  margin-left: 55px;
-	  margin-right: 25px;
+     .top-left {
+      margin-left: 55px;
+      margin-right: 25px;
     }
 
-      .feature2-right {
-        margin-top: 20px;
-		margin-right: 225px;
-      }
+    .feature2-right {
+      margin-top: 20px;
+      margin-right: 225px;
+     }
 	  
-	  .carousel-container {
+    .carousel-container {
       max-width: 55%;
-	  }
-	  
-	  
-      .carousel-slide {
-        min-width: calc(100% - 20px);
-		overflow: hidden;
-      }
+    }	  
+     
+    .carousel-slide {
+      min-width: calc(100% - 20px);
+      overflow: hidden;
+    }
 
-      .prev, .next {
+     .prev, .next {
         top: 40%;
-      }
+    }
 	  
-	  .prev {
+    .prev {
       left: 75px;
     }
 
@@ -1232,26 +1263,26 @@
     }
     }
 	
-	@media (max-width: 768px) {
-		
-	.text-content {
-	  margin-left: 300px;
+    @media (max-width: 768px) {	
+     .text-content {
+      margin-left: 300px;
       padding-right: 20px;
     }
+	    
       .text-content h1 {
         font-size: 1.3rem;
-      }
+    }
 	  
-	  .text-content p {
+      .text-content p {
       font-size: 0.47rem;
-	  }
+    }
 	  
-	  .btn-container {
-	  margin-right: 55px;
+    .btn-container {
+      margin-right: 55px;
       gap: 10px;
     }
 	
-	   .btn-custom {
+     .btn-custom {
         font-size: 0.1rem;
         padding: 7px 10px;
       }
@@ -1261,7 +1292,7 @@
       }
     }
 	
-	@media screen and (max-width: 576px) {
+     @media screen and (max-width: 576px) {
       .background-layer {
         background-image: url('feature2-bgimg.jpg');
         background-size: cover;
@@ -1272,43 +1303,46 @@
         margin-right: 15px;
       }
 	  
-	  .text-content {
-	  margin-left: 265px;
-      padding-right: 30px; 
+      .text-content {
+       margin-left: 265px;
+       padding-right: 30px; 
     }
-	
-	 .text-content p {
+    
+     .text-content p {
       font-size: 0.47rem;
-	  }
+    }
 	  
-	  .btn-container {
-	  margin-right: 70px;
+    .btn-container {
+      margin-right: 70px;
       gap: 10px;
     }
 	
-	   .btn-custom {
-        font-size: 0.1rem;
-        padding: 4.5px 5.5px;
-      }
+     .btn-custom {
+      font-size: 0.1rem;
+      padding: 4.5px 5.5px;
+     }
 
-      .btn-text {
-        font-size: 0.1rem;
+     .btn-text {
+      font-size: 0.1rem;
       }
     }
 	
     @media screen and (max-width: 768px) {
-      .featureno5-description {
-        margin-left: 75px;
-        margin-right: 75px;
-        font-size: 12px;
+    .featureno5-description {
+      margin-left: 75px;
+      margin-right: 75px;
+      font-size: 12px;
+     }
+	    
+     .carousel {
+       width: 80%;
       }
-      .carousel {
-        width: 80%;
-      }
+	    
       .carouselno2-slide {
         flex: 0 0 33.3%;
       }
-      .prevbutton, .nextbutton {
+	     
+     .prevbutton, .nextbutton {
         width: 30px;
         height: 30px;
         font-size: 16px;
@@ -1321,12 +1355,15 @@
         margin-right: 50px;
         font-size: 12px;
       }
+	    
       .carousel {
         width: 70%;
       }
+	    
       .carouselno2-slide {
         flex: 0 0 50%;
       }
+	    
       .prevbutton, .nextbutton {
         width: 25px;
         height: 25px;
@@ -1334,38 +1371,37 @@
       }
     }
 	
-	@media (max-width: 768px) {
+      @media (max-width: 768px) {
       .content-section {
         flex-direction: column;
         padding: 10px;
       }
 
-	.contentbg-image {
-		width: 100%;
-		height: 1350px;
-    }
+      .contentbg-image {
+	width: 100%;
+	height: 1350px;
+      }
 	
       .centered-image {
-		 border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
         max-width: 380px
       }
 	  
       .content {
         max-width:377px;
-		border-radius: 0 0 8px  8px;
+	border-radius: 0 0 8px  8px;
       }
 	  
-	  .bottom-paragraph {
-	  margin-left: 100px; 
-	  margin-right: 100px; 
-	}
+     .bottom-paragraph {
+       margin-left: 100px; 
+       margin-right: 100px; 
+      }
 	  
       .input-group {
         width: 75%;
         margin-left: 100px;
       }
     }
-	
 	
     @media (max-width: 576px) {
       .content-section {
@@ -1374,23 +1410,23 @@
       }
 
      .contentbg-image {
-		width: 100%;
-		height: 1350px;
+	width: 100%;
+	height: 1350px;
     }
 	
       .centered-image {
-		border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
         max-width: 325px
       }
 
       .content {
         max-width:325px;
-		border-radius: 0 0 8px  8px;
+	border-radius: 0 0 8px  8px;
       }
 	   
-	  .bottom-paragraph {
-	  margin-left: 75px; 
-	  margin-right: 75px; 
+      .bottom-paragraph {
+        margin-left: 75px; 
+	margin-right: 75px; 
 	}
 	  
       .input-group {
@@ -1399,10 +1435,10 @@
       }
     }
 	
-	@media (max-width: 768px) {
+      @media (max-width: 768px) {
       .featureno6-section {
         flex-direction: column;
-		margin: 70px  auto 30px;
+	margin: 70px  auto 30px;
       }
 	  
       .featureno6-content {
@@ -1410,119 +1446,121 @@
         text-align: left;
       }
 	  
-	  .featureno6-title {
-	  margin-left: 10px;
-      margin-right: 175px; 
-    }
-	
+       .featureno6-title {
+	 margin-left: 10px;
+         margin-right: 175px; 
+      }
+	      
 	.featureno6-description {
 	  margin-left: 10px;
 	  margin-right: 50px; 
-    }
+      }
 	  
       .featureno6image-container {
         max-width: 55%;
         margin: 20px 0 20px 0px;
       }
+	      
       .featureno6image-container img {
         margin: 0 auto;
       }
 	  
-	.featureno6-btn {
-      margin-left: 10px;
-    }
-    }
-
-    @media (max-width: 576px) {
-      .featureno6-section {
-        flex-direction: column;
-		margin: 70px  auto 30px;
+      .featureno6-btn {
+        margin-left: 10px;
+       }
       }
-	  
-	  
+
+      @media (max-width: 576px) {
+       .featureno6-section {
+        flex-direction: column;
+	margin: 70px  auto 30px;
+      }
+	   
       .featureno6-content {
         max-width: 70%;
         text-align: left;
       }
 	  
-	  .featureno6-title {
-	  margin-left: 5px;
-      margin-right: 75px; 
-    }
-	
-	.featureno6-description {
-	  margin-left: 5px;
-	  margin-right: 10px; 
-    }
+      .featureno6-title {
+        margin-left: 5px;
+        margin-right: 75px; 
+      }
+	      
+      .featureno6-description {
+	margin-left: 5px;
+	margin-right: 10px; 
+      }
 	  
       .featureno6image-container {
         max-width: 60%;
         margin: 20px 0 20px 20px;
         text-align: center;
       }
+	      
       .featureno6image-container img {
         margin: 0 auto;
       }
 	  
-	.featureno6-btn {
-      margin-left: 5px;
-    }
-    }
+     .featureno6-btn {
+       margin-left: 5px;
+     }
+     }
 	
-	
-		@media (max-width: 768px) {
-		  .carouselnum3-bgimg {
-		   height: 350px; 
-        }
-        .carouselnum3-item {
-			margin: 0 8px; 
-        }
+      @media (max-width: 768px) {
+       .carouselnum3-bgimg {
+	height: 350px; 
+      }
+	      
+     .carouselnum3-item {
+	margin: 0 8px; 
+      }
        
-        .carouselnum3-buttons {
-            bottom: 55px;
-        }
-	   }
+      .carouselnum3-buttons {
+        bottom: 55px;
+       }
+      }
 
     @media (max-width: 576px) {
-		.carouselnum3-bgimg {
-		   height: 280px; 
-        }
-        .carouselnum3-item {
-			  margin: 0 6px; 
-        }
+      .carouselnum3-bgimg {
+	height: 280px; 
+       }
+	    
+       .carouselnum3-item {
+	 margin: 0 6px; 
+       }
        
-        .carouselnum3-buttons {
-            bottom: 100px;
+       .carouselnum3-buttons {
+         bottom: 100px;
         }
 	   }
 	   
-	    @media (max-width: 768px) {
+       @media (max-width: 768px) {
         .ninthpage-section {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+         flex-direction: column;
+         align-items: flex-start;
+        }
 
-      .ninthsection-title,
+       .ninthsection-title,
+       .ninthsection-paragraph {
+         margin-left: 150px;
+         max-width: 50%;
+        }
+	
       .ninthsection-paragraph {
+        max-width: 65%;
+        text-align: left;
         margin-left: 150px;
-        max-width: 50%;
-      }
-	  
-	  .ninthsection-paragraph {
-      max-width: 65%;
-      text-align: left;
-      margin-left: 150px;
-    }
-
+       }
+	       
       .ninthsec-container {
         flex-direction: column;
-		margin: 0 75px;
+	margin: 0 75px;
       }
 
       .image-left,
       .image-right {
         width: 70%;
-		margin-left: px;
+	margin-left: px;
         margin-bottom: 20px;
       }
 
@@ -1549,8 +1587,8 @@
       .ninthsection-title,
       .ninthsection-paragraph {
        margin-left: 70px;
-        max-width: 90%;
-        text-align: left;
+       max-width: 90%;
+       text-align: left;
       }
 
       .ninthsec-container {
@@ -1561,7 +1599,7 @@
       .image-left,
       .image-right {
         width: 80%;
-		margin-left: 70px;
+	margin-left: 70px;
         margin-bottom: 20px;
       }
 
@@ -1579,7 +1617,7 @@
       }
     }
 	
-	@media (max-width: 768px) {
+     @media (max-width: 768px) {
       .footer {
         padding: 20px;
       }
@@ -1661,7 +1699,7 @@
   </style>
 </head>
 <body>
-	<header class="transparent-header">
+    <header class="transparent-header">
     <div class="navbar">
       <div class="logo">
         <a class="navbar-logo" href="#">
@@ -1684,6 +1722,7 @@
         </ul>
       </div>
   </header>
+	
   <section class="bg-image">
     <h1 class="title">Travel The World,<br>
       <div style="color:#FF6700">Feel At Home</div>
@@ -1706,7 +1745,9 @@
         <a href="#">Learn more</a>
       </div>
     </div>
-	 <section class="logo-carousel-section">
+  </section>
+	
+  <section class="logo-carousel-section">
     <h5 style="text-align: center">Featured In</h5><br>
     <div class="logo-carousel owl-carousel">
       <div class="item"><img src="logo1.jpg" alt="Logo 1"></div>
@@ -1716,20 +1757,21 @@
       <div class="item"><img src="logo5.jpg" alt="Logo 5"></div>
     </div>
   </section>
-	<section class="feature-section">
-			<img src="Group1880.jpg" alt="Feature Image" class="feature-image">
-		<div class="feature-content">
-			<h1 class="feature-title"><font color="#FF6700">Elevate</font> Your Travel Experiences</h1>
-			<p class="feature-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+	
+  <section class="feature-section">
+     <img src="Group1880.jpg" alt="Feature Image" class="feature-image">
+	<div class="feature-content">
+	  <h1 class="feature-title"><font color="#FF6700">Elevate</font> Your Travel Experiences</h1>
+	  <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
 			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, 
 			quis nostrud execriation ullamco laboris nisi ut aliquip ex ea commodo 
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
 			proident, sunt in culpa qui officia deserunt mollit anim id est</p></br>
 			<a href="#" class="feature-button hover ">LEARN MORE</a></div>
-	</section>
-	<section>
+  </section>
+	
+  <section>
     <div class="feature2">
       <div class="top-left">
         <h1 class="feature-title" style= "line-height: 0.8;  font-size: 2rem;">
@@ -1772,8 +1814,9 @@
       <button class="next" onclick="moveSlides(1)">&#10095;</button>
     </div>
   </section>
+	
   <section>
-		<div class="background-layer">
+    <div class="background-layer">
     <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	viewBox="0 0 1548 665">
       <defs>
@@ -1804,15 +1847,16 @@
       <a href="#" class="btn-custom">BECOME A MEMBER</a>
 	   <a href="#" class="btn-text">How it works</a>
 		</div>
+	</div>
     </div>
-  </div>
   </section>
-	 <section>
-    <h1 class="feature-title" style="text-align: center">Explore <font color="#FF6700">Destinations</font></h1>
-    <p class="featureno5-description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
+	
+   <section>
+    	<h1 class="feature-title" style="text-align: center">Explore <font color="#FF6700">Destinations</font></h1>
+    	<p class="featureno5-description">
+     	 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    	</p>
     <div class="carouselno2-section">
       <button class="carousel-buttons prevbutton" id="prevButton">&#10094;</button>
       <div class="carousel">
@@ -1832,8 +1876,7 @@
           <div class="carouselno2-slide">
             <img src="Hawaii.png" alt="Hawaii">
             <div class="carouselno2-description">Hawaii</div>
-          </div>
-		  
+          </div>	  
         </div>
       </div>
       <button class="carousel-buttons nextbutton" id="nextButton">&#10095;</button>
@@ -1843,7 +1886,7 @@
     </div>
   </section>
   
-	<section class="contentbg-image">
+   <section class="contentbg-image">
     <div class="content-section">
       <img src="section6img.jpg" alt="Your Image Description" class="centered-image">
       <div class="content">
@@ -1916,11 +1959,11 @@
     </div>
   </section>
   
-	<section class= "carouselnum3-bgimg">
-	<h2 style= "text-align: center; font-family: sans-serif; font-weight: 600;margin-bottom: 40px">
-	  Hear From<font color="#FF6700"> Our Members</font></h2>
-		<div class="carouselnum3-container">
-    <div class="carouselnum3">
+  <section class= "carouselnum3-bgimg">
+       <h2 style= "text-align: center; font-family: sans-serif; font-weight: 600;margin-bottom: 40px">
+ 	Hear From<font color="#FF6700"> Our Members</font></h2>
+     <div class="carouselnum3-container">
+     <div class="carouselnum3">
         <div class="carouselnum3-item">
             <img src="Group1877.png" alt="Image 1">
         </div>
@@ -1939,16 +1982,16 @@
 		<div class="carouselnum3-item">
             <img src="Group1877.png" alt="Image 6">
         </div>
-    </div>
+      </div>
 	<div class="carouselnum3-buttons">
         <span class="carouselnum3-dot"></span>
         <span class="carouselnum3-dot"></span>
         <span class="carouselnum3-dot"></span>
-    </div>
-</div>
-	</section>
+     </div>
+   </div>
+</section>
 	
-	<section>
+ <section>
     <div class="ninthpage-section">
       <div class="ninthsection-title">
         <h2 style="font-family: sans-serif; font-weight: 600">Tips &<font color="#FF6700"> Inspiration</font></h2>
@@ -1959,6 +2002,7 @@
       </div>
     </div>
   </section>
+	
   <section>
     <div class="ninthsec-container">
       <div class="image-left">
@@ -1999,18 +2043,17 @@
                     <button type="submit">SUBSCRIBE</button>
                 </form>
             </div>
-        </section>
+   </section>
 		
-		<footer class="footer" style= "margin-top: 50px">
-  <div style="display: flex; justify-content: space-between; flex-wrap: wrap;  margin-left: 75px; margin-right: 75px">
-    <div style="flex: 1; min-width: 280px; margin-right: 50px;">
-      <img src="logoipsum.png" alt="Company Logo" style= "width:120px;height:30px;">
-      <p style="margin-top: 20px; font-size: 0.6rem; color: #000000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, 
-quis nostrud execriation ullamco laboris nisi ut aliquip ex ea commodo 
-consequat.</p>
-    </div>
-
+   <footer class="footer" style= "margin-top: 50px">
+     <div style="display: flex; justify-content: space-between; flex-wrap: wrap;  margin-left: 75px; margin-right: 75px">
+    	<div style="flex: 1; min-width: 280px; margin-right: 50px;">
+      	<img src="logoipsum.png" alt="Company Logo" style= "width:120px;height:30px;">
+      <p style="margin-top: 20px; font-size: 0.6rem; color: #000000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+	      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud 
+	      execriation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	     
     <div class="footer-links a" style="flex: 1; min-width: 150px; margin-right: 20px; font-family: sans-serif;">
       <h6 style="font-weight: 600; color: #000000">QUICK LINKS</h6>
       <ul style="list-style: none; padding: 5PX; color: #000000; font-size: 0.6rem; line-height: 2;">
@@ -2048,22 +2091,21 @@ consequat.</p>
             </div>
         </div>
     </div>
-  
-  
+	   
 </footer>
   
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
 	
-	document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
 
-    document.getElementById('searchnow').addEventListener('click', function() {
-      window.location.href = 'frontendtest.html';
+  document.getElementById('searchnow').addEventListener('click', function() {
+  window.location.href = 'frontendtest.html';
     });
 
-    document.querySelector('.menu-icon').addEventListener('click', function() {
-      document.querySelector('.navbar ul').classList.toggle('show');
+  document.querySelector('.menu-icon').addEventListener('click', function() {
+  document.querySelector('.navbar ul').classList.toggle('show');
     });
   });
 
@@ -2108,7 +2150,7 @@ consequat.</p>
       moveSlides(0); 
     });
 	
-	const track = document.querySelector('.carousel-track');
+    const track = document.querySelector('.carousel-track');
     const slideItems = Array.from(track.children);
     const nextButton = document.getElementById('nextButton');
     const prevButton = document.getElementById('prevButton');
