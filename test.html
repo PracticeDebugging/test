@@ -1127,46 +1127,78 @@
       }
     }
 
+     /* Media Queries for 320px to 480px screens */
     @media screen and (max-width: 480px) {
-      .navbar a {
-        font-size: 0.55rem;
+      .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
       }
-      .navbutton {
-        font-size: 0.55rem;
-        padding: 5px 15px;
+
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 10px;
+        border-radius: 8px;
       }
+
+      .navbar ul.show {
+        display: block;
+      }
+
+      .menu-icon {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-left: auto;
+	
+      }
+
       .bg-image {
-        height: 55vh;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }
+
       .title {
-        font-size: 1.8rem;
-        margin-left: 20px;
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-left: 0;
       }
+
       .subtitle {
-        font-size: 0.9rem;
-        margin-left: 20px;
-        margin-bottom: 15px;
+        font-size: 0.8rem;
+        margin-left: 0;
+        margin-bottom: 10px;
       }
+
       .search-bar {
-        margin-left: 20px;
-        max-width: 90%;
+        max-width: 85%;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 10px;
       }
-      .search-input {
-        font-size: 0.5rem;
-      }
-      .search-button {
-        font-size: 0.55rem;
-      }
+
       .bottom-section {
         flex-direction: column;
         padding: 10px;
       }
+
       .bottom-center {
         margin-left: 10px;
         margin-right: 10px;
+        text-align: center;
       }
-      .bottom-right a {
-        margin-right: 80px;
+
+      .bottom-right {
+        margin-right: 10px;
+        text-align: center;
       }
     }
 	  
@@ -2196,10 +2228,10 @@
         items: 6,
         responsive: {
           0: {
-            items: 2
+            items: 6
           },
           600: {
-            items: 4
+            items: 6
           },
           1000: {
             items: 6
