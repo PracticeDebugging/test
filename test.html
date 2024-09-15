@@ -341,22 +341,26 @@
       color: #FF6700;
     }
 	
-    .background-layer {
-      width: calc(100% - 200px);
-      height: 70vh;
-      margin: 0 auto; 
-      position: relative;
-    }
+    .background-section {
+       background-image: url('pexelsmarianne.jpg'); 
+       background-size: cover;
+       background-position: center;
+       margin: 50px 50px;
+       padding: 100px 0;
+       min-height: 400px;
+       position: relative;
+      }
 
-    .svg-background {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
+     .background-section::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: rgba(0, 0, 0, 0.5); 
+       z-index: 0;
+     }
     .text-content {
       position: absolute;
       right: 0;
@@ -1912,41 +1916,16 @@
     </div>
   </section>
 	
-  <section>
-    <div class="background-layer">
-    <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	viewBox="0 0 1548 665">
-      <defs>
-        <pattern id="pattern" width="1" height="1" viewBox="166.703 152.747 1381.297 593.387">
-          <image preserveAspectRatio="xMidYMid slice" width="1548" height="898.881" xlink:href="Group1881-image.jpg"/>
-        </pattern>
-        <linearGradient id="linear-gradient" x1="1" y1="0.452" x2="0" y2="0.468" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-opacity="0.89"/>
-          <stop offset="0.435" stop-opacity="0.545"/>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-        </linearGradient>
-      </defs>
-      <g id="Group_1881" data-name="Group 1881" transform="translate(-195 -3250)">
-        <rect id="pexels-marianne-238385" width="1548" height="665" rx="4" transform="translate(195 3250)" fill="url(#pattern)"/>
-        <rect id="pexels-kampus-production-5990917" width="1548" height="665" rx="4" 
-		transform="translate(195 3250)" fill="url(#linear-gradient)"/>
-      </g>
-    </svg>
-	
-    <div class="text-content">
-      <h1>Turn Your Home Into <span style="color: #FF6700;">A Travel Asset</span></h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, 
-		quis nostrud execriation ullamco laboris nisi ut aliquip ex ea commodo 
-		consequat.
-		</p>
-		<div class="btn-container">
-      <a href="#" class="btn-custom">BECOME A MEMBER</a>
-	   <a href="#" class="btn-text">How it works</a>
-		</div>
-	</div>
-    </div>
-  </section>
+    <section class="background-section">
+        <div class="text-content">
+            <h1>Turn Your Home Into <span style="color: #FF6700;">A Travel Asset</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="btn-container">
+                <a href="#" class="btn-custom">BECOME A MEMBER</a>
+                <a href="#" class="btn-text">How it works</a>
+            </div>
+        </div>
+    </section>
 	
    <section>
     	<h1 class="feature-title" style="text-align: center">Explore <font color="#FF6700">Destinations</font></h1>
