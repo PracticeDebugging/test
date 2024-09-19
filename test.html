@@ -2136,6 +2136,7 @@
                     <input type="email" id="email" name="email" placeholder="Email address" required>
                     <button type="submit">SUBSCRIBE</button>
                 </form>
+		<p id="confirmationMessage" style="color: #FF6700; display: none;">Thank you for subscribing!</p>
             </div>
    </section>
 		
@@ -2172,8 +2173,8 @@
    
     <div style="flex: 1; min-width: 150px; font-family: sans-serif; ">
 		<h6 style="font-weight: 600; color: #000000; margin-bottom: 15px">GET STARTED</h6>
-      <a href="#" class= "footerbutton" style="margin-bottom: 15px">BECOME A MEMBER</a>
-      <a href="#" class= "footerbutton2">CREATE LISTING</a>
+      <a href="#"><button class= "footerbutton" style="margin-bottom: 15px">BECOME A MEMBER</button></a>
+      <a href="#"><button class= "footerbutton2">CREATE LISTING</button></a>
     </div>
   </div>
 	<div class="bottomfooter-wrapper">
@@ -2265,6 +2266,28 @@
     });
 
     updateCarousel();
+
+    // JavaScript to handle form submission
+    document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevents default form submission action
+
+      // Get the email value
+      var email = document.getElementById('email').value;
+
+      // Perform validation if needed (basic example)
+      if (email) {
+        // You can add form submission logic here, like sending data to a server
+        console.log('Form submitted with email: ' + email);
+
+        // Display a confirmation message
+        document.getElementById('confirmationMessage').style.display = 'block';
+
+        // Clear the form after submission
+        document.getElementById('subscribeForm').reset();
+      } else {
+        console.log('Email field is required.');
+      }
+    });
 </script>
 </body>
 </html>
