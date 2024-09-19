@@ -1611,21 +1611,26 @@
        }
       }
 
-    @media (max-width: 576px) {
-      .carouselnum3-bgimg {
-		height: 230px; 
+      @media (max-width: 576px) { 
+	  .carouselnum3-bgimg {
+       height: 230px; 
+      }
+
+      .carouselnum3-item {
+        margin: 0 4px; 
+        width: 50%; 
+      }
+	  
+      .carouselnum3-buttons {
+        margin-bottom: 70px;
        }
-	    
-       .carouselnum3-item {
-		margin: 0 6px; 
-		flex: 0 0 100%;
-       }
-	 }
+     }
+
        @media (max-width: 768px) {
         .ninthpage-section {
          flex-direction: column;
          align-items: flex-start;
-		 margin-top: 100px;
+         margin-top: 50px;
         }
 
        .ninthsection-title,
@@ -1670,7 +1675,7 @@
       .ninthpage-section {
         flex-direction: column;
         align-items: flex-start;
-		margin-bottom: 20px;
+	margin-bottom: 20px;
       }
 
       .ninthsection-title,
@@ -1691,7 +1696,7 @@
 	   margin-left: 30px;
       }
 	  
-	  .overlay-content {
+    .overlay-content {
       top: 10%;
       bottom: 0px;
     }
@@ -2266,23 +2271,17 @@
     });
 
     updateCarousel();
-
-    // JavaScript to handle form submission
+	
     document.getElementById('subscribeForm').addEventListener('submit', function(event) {
       event.preventDefault(); // Prevents default form submission action
 
-      // Get the email value
       var email = document.getElementById('email').value;
 
-      // Perform validation if needed (basic example)
       if (email) {
-        // You can add form submission logic here, like sending data to a server
         console.log('Form submitted with email: ' + email);
 
-        // Display a confirmation message
         document.getElementById('confirmationMessage').style.display = 'block';
 
-        // Clear the form after submission
         document.getElementById('subscribeForm').reset();
       } else {
         console.log('Email field is required.');
